@@ -48,5 +48,4 @@ Route::group([
     Route::get('checklist/{id}/item/{itemId}', [ProductItemController::class, 'show']);
     Route::post('checklist/{id}/item', [ProductItemController::class, 'store']);
     Route::delete('checklist/{id}/item/{itemId}', [ProductItemController::class, 'destroy']);
-    Route::put('checklist/{id}/item/rename/{itemId}', [ProductItemController::class, 'rename']);
 });
